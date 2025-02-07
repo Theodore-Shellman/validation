@@ -10,8 +10,8 @@ const showError = (input, errorMessage) => {
 
 const hideError = (input) => {
   input.classList.remove("form__input_type_error");
-  // 1. Remove the active error class from formError.
-  // 2. Reset the textContent property for formError element.
+  formError.classList.remove("form__input-error_active");
+  formError.textContent = "";
 };
 
 const checkInputValidity = () => {
